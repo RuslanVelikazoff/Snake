@@ -80,12 +80,10 @@ public class MenuUIManager : MonoBehaviour
         if (PlayerPrefs.GetFloat("MusicVolume") == 0)
         {
             musicButton.GetComponent<Image>().sprite = offMusicSprite;
-            musicButton.GetComponent<Image>().color = Color.red;
         }
         else
         {
             musicButton.GetComponent<Image>().sprite = onMusicSprite;
-            musicButton.GetComponent<Image>().color = Color.green;
         }
     }
 
@@ -94,12 +92,10 @@ public class MenuUIManager : MonoBehaviour
         if (PlayerPrefs.GetFloat("SoundVolume") == 0)
         {
             soundButton.GetComponent<Image>().sprite = offSoundSprite;
-            soundButton.GetComponent<Image>().color = Color.red;
         }
         else
         {
             soundButton.GetComponent<Image>().sprite = onSoundSprite;
-            soundButton.GetComponent<Image>().color = Color.green;
         }
     }
 }
